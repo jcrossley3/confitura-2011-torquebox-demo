@@ -5,7 +5,7 @@ TorqueSpec.local {
   require 'akephalos'
 
   Capybara.register_driver :akephalos do |app|
-    Capybara::Driver::Akephalos.new(app, :browser => :firefox_3)
+    Capybara::Driver::Akephalos.new(app, :browser => :firefox_3, :resynchronize=>false, :validate_scripts=>false)
   end
 
   Capybara.default_driver = :akephalos
