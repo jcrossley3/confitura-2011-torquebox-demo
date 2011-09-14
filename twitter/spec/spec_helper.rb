@@ -19,3 +19,7 @@ TorqueSpec.local {
     end
   end
 }
+
+# Because DRb requires ObjectSpace and 1.9 disables it
+require 'jruby'
+JRuby.objectspace = true
