@@ -3,5 +3,5 @@ gem "tweetstream"
 gem "torquebox", "~> 2.x.incremental.00"
 
 group :development, :test do
-  gem 'torquespec', ">= 0.3.5"
+  gem 'torquespec', ">= 0.4.2"
 end
